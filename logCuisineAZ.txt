@@ -1,0 +1,151 @@
+Recipe Object
+(
+    [title:protected] => Soupe de poulet aux champignons noirs
+    [ingredients:protected] => 1 carcasse de poulet cuit ( + 1 cuisse de poulet) 
+8 champignons noirs (Suzi wan)  
+1 morceau gingembre frais (de 3 cm)  
+1.5 c. à café purée de piments (Suzi Wan) 
+1 paquet nouille aux oeufs (Suzi Wan) 
+3 oignons  
+3 clous girofle 
+3 anis étoilées (ou badiane)   
+2 ciboules (plante aromatique)
+8 brins coriandre fraiche 
+2 citrons confits 
+    [instructions:protected] => Dans un grand faitout, versez 4 litres d’eau, ajoutez la carcasse de poulet et la cuisse, le gingembre non pelé coupé en deux dans l’épaisseur, 1 oignon, les clous de girofle, la badiane et les champignons noirs.
+Faites cuire sur feu moyen pendant 2 heures. 
+10 min avant la fin de cuisson, ajoutez la purée de piment.
+Retirez délicatement du faitout, la carcasse de poulet et la cuisse à l’aide d’une écumoire.
+Faites cuire les nouilles dans le bouillon. Si le niveau a trop baissé, ajoutez un peu d’eau sans trop éclaircir le bouillon
+Décortiquez le poulet, retirez toute la chair restante sur la carcasse et la cuisse et répartissez-la dans 4 grands bols.
+Pelez et émincez les oignons restants, émincez les ciboules et la coriandre et déposez dans les bols.
+A l’aide d’une écumoire ou d’une pince à spaghetti, répartissez les nouilles et les champignons dans les bols, ajoutez le bouillon. Servez aussitôt avec les citrons coupés en deux. 
+Chaque convive ajoutera le jus de citron et le nuöc mám, pour saler sa soupe.
+    [nbPersons:protected] => 4 Personne(s)
+    [preparationTime:protected] => 5 min
+    [cookingTime:protected] => 2 h 
+)
+Recipe Object
+(
+    [title:protected] => Truffes au chocolat
+    [ingredients:protected] => 300 g de chocolat noir 
+100 g de beurre 
+2 jaunes d'oeuf  
+125 g de sucre glace 
+1 c. à soupe de lait 
+4 cl de crème liquide 
+cacao en poudre
+    [instructions:protected] => Cassez le chocolat en petits morceaux dans une casserole. 
+Ajoutez le lait et faites fondre à feu doux. Mélangez avec une spatule en bois pour obtenir une pâte lisse. 
+Ajoutez alors le beurre en parcelles en mélangeant.
+Puis incorporez les jaunes d'oeufs un par un et enfin la crème liquide. Mélangez bien.
+Ajoutez alors le sucre glace en fouettant.
+Versez la pâte dans un saladier et placez au frais pendant au moins 2 heures. 
+Quand la pâte est bien dure, formez des petites boules de la taille d'une noix et roulez-les dans le cacao.
+Gardez au frais jusqu'au moment de déguster.
+    [nbPersons:protected] => 20 truffes
+    [preparationTime:protected] => 10 min
+    [cookingTime:protected] => 10 min
+)
+Recipe Object
+(
+    [title:protected] => Verrines de pommes de terre à la betterave
+    [ingredients:protected] => 250 g de pommes de terre Princesse Amandine 
+100 g de beurre clarifié
+300 g de crème liquide
+1 betterave cuite
+piment d’Espelette
+sel 
+    [instructions:protected] => Epluchez les pommes de terre Princesse Amandine.
+Cuisez-les dans une grande quantité d'eau, passez-les au tamis puis mixez-les avec la créme liquide et le beurre clarifié. 
+Assaisonnez le mélange qui doit être liquide, versez-le dans un syphon et gazez à 2 reprises.
+Taillez la betterave en petits dés.
+Déposez les dés de betteraves au fond de la verrine, recouvrez avec 2 pressions de syphon et servez.
+    [nbPersons:protected] => 4 Personne(s)
+    [preparationTime:protected] => 15 min
+    [cookingTime:protected] => 
+)
+Recipe Object
+(
+    [title:protected] => Verrines de saumon aux oeufs brouillés
+    [ingredients:protected] => 8 œufs 
+4 tranches de saumon fumé de Norvège
+60 g de crème fraîche épaisse allégée à 5% de MG
+30 g de beurre allégé
+1/2 botte de ciboulette 
+sel, poivre 
+    [instructions:protected] => Lavez, séchez et ciselez la ciboulette. 
+Faites fondre 15 g de beurre dans une casserole à feu doux. Toujours sur feu doux, ajoutez la ciboulette puis la crème fraîche. Assaisonnez, mélangez.
+Dans un bol, cassez les œufs. Faites fondre le beurre restant dans un bol au bain-marie. Une fois fondu, ajoutez les œufs et faites-les cuire doucement en mélangeant.
+Assaisonnez.
+Dans les verrines, disposez une couche de crème à la ciboulette puis une tranche de saumon fumé et enfin les oeufs brouillés.
+Réservez au réfrigérateur.
+Servez frais.
+    [nbPersons:protected] => 4 Personne(s)
+    [preparationTime:protected] => 15 min
+    [cookingTime:protected] => 
+)
+Recipe Object
+(
+    [title:protected] => Salade sucrée salée mangue crabe
+    [ingredients:protected] => 2 barquettes de mangue fraîchement coupée M’les fruits (150 g)
+2 avocats mûrs mais fermes
+2 boîtes de chair de crabe
+1 barquette de coriandre fraîche Cueillette du sud
+1 oignon nouveau
+2 c. à soupe d’huile d’olive
+le jus d’un citron vert
+1 c. à café de gingembre frais râpé
+sel et poivre
+    [instructions:protected] => Égouttez la chair de crabe.
+Rincez et ciselez la coriandre.
+Coupez les avocats en cubes et émincez l’oignon nouveau.
+Dans un saladier, mélangez le jus de citron, l’huile d’olive, le gingembre râpé, la coriandre ciselée, le sel et le poivre.
+Ajoutez les dés d’avocat, les cubes de mangue, et la chair de crabe. Mélangez bien.
+Déposez le plat au frais.
+    [nbPersons:protected] => 4 à 6
+    [preparationTime:protected] => 5 min
+    [cookingTime:protected] => 
+)
+Recipe Object
+(
+    [title:protected] => Salade de pommes de terre Alsacienne
+    [ingredients:protected] => 1 kg de pommes de terre fondantes
+25 cl de crème fraîche liquide
+25 cl de vinaigre de miel
+2 oignons roses
+200 g de poitrine fumée
+1 c. à soupe de moutarde douce type Savora
+2 c. à soupe d'huile de tournesol
+sel, poivre
+    [instructions:protected] => Faites cuire les pommes de terre assez longtemps pour qu'elles soient très moelleuses. Pendant ce temps, faites blanchir les oignons. Faites revenir la poitrine fumée coupée en lamelles très fines, dans une poêle.
+Préparez la vinaigrette. Mélangez la crème fraîche, le vinaigre de miel, 2 c. à soupe d'huile, 1 c. à soupe de moutarde, le sel et le poivre.
+Coupez les pommes de terre en gros carrés et mélangez à la vinaigrette. Ajoutez les oignons juste blanchis, pas grillés, et la poitrine.
+Le mélange doit être très onctueux et la vinaigrette en quantité suffisante pour tout imbiber.
+    [nbPersons:protected] => 5 à 6 personnes
+    [preparationTime:protected] => 15 min
+    [cookingTime:protected] => 20 min
+)
+Recipe Object
+(
+    [title:protected] => Soupe crémeuse aux champignons 
+    [ingredients:protected] => 10 gros champignons de Paris
+4 portions de fromage fondu 
+1 oignon
+15 g de beurre
+2 dl de crème liquide
+1 dl de lait
+sel, poivre
+    [instructions:protected] => Lavez les champignons et coupez-les en gros dés.
+Épluchez et coupez l’oignon en fines lamelles.
+Dans une casserole, faites dorer l’oignon 1 min avec le beurre.
+Ajoutez les champignons et faites-les cuire 5 min.
+Couvrez d’eau à hauteur et faites cuire 15 min.
+Ajoutez 1 dl de crème liquide, assaisonnez et mixez à l'aide d'un mixeur.
+Dans une autre casserole, faites bouillir le lait, la crème liquide restante et les portions fromage fondu.
+Salez, poivrez et mixez. Ajoutez la moitié de cette préparation à la soupe de champignons.
+Servez la soupe de champignons et ajoutez-y le reste de la préparation à base de fromage fondu. 
+    [nbPersons:protected] => 4 Personne(s)
+    [preparationTime:protected] => 20 min
+    [cookingTime:protected] => 20 min
+)

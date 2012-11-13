@@ -16,4 +16,20 @@ abstract class AbstractRecipeCrawler{
 	}
 
 	abstract function crawl($url);
+
+	protected function convertElementsIntoString($nodes){
+		return implode ("\n", $nodes->each(function ($node, $i) {
+								    return $node->nodeValue;
+								}));
+	}
+
+	protected function getTextValue($node)
+	{
+		try{
+			return $node->text();
+		}
+		catch(InvalidArgumentException $e){
+			return "";
+		}
+	}
 }
