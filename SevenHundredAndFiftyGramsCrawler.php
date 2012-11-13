@@ -12,14 +12,18 @@ class SevenHundredAndFiftyGramsCrawler extends AbstractRecipeCrawler{
 					->filter('#col_center')
 					;
 		$descr = $recette->filter('.recette_description');
-		$ingr_list = $descr->filter('.ingredient .fold');
+		$ingredients_list = $descr->filter('.ingredient .fold');
+		$recipe_details = $recette->filter('.recette_infos .infos_column p');
 
-		$recipe->setTitle($recette->filter('.page_recette_titre .fn')->text());
+		// Get title
+		$recipe->setTitle($this->getTextValue($recette->filter('.page_recette_titre .fn')));
 
-		$recipe->setIngredients( implode ("\n", $ingr_list->each(function ($node, $i) {
+		// Get ingredients
+		$recipe->setIngredients( implode ("\n", $ingredients_list->each(function ($node, $i) {
 								    return $node->nodeValue;
 								})));
 
+		// Get instructions
 		$recipe->setInstructions( implode ("\n", $recette->filter('.content .steps span')
 								->reduce(function($node, $i){
 									// Remove line numbers
@@ -31,6 +35,23 @@ class SevenHundredAndFiftyGramsCrawler extends AbstractRecipeCrawler{
 								})))
 								;
 
+		// Get preparation details
+		$details = $recipe_details->each (function($node, $i){ return $node->nodeValue; });
+
+		$recipe->setNbPersons($this->extractValue ($details, "Nombre de personnes : " ));
+		$recipe->setPreparationTime( $this->extractValue ($details, "Temps de préparation : "));
+		$recipe->setCookingTime( $this->extractValue ($details, "Temps de cuisson : "));
+
 		return $recipe;
+	}
+
+	private function extractValue($array, $string){
+		foreach ($array as $value){
+			if (strstr($value, $string)){
+				//return $value;
+				return trim(substr(trim($value), strlen($string)));
+			}
+		}
+
 	}
 }
