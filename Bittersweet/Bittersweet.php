@@ -1,10 +1,10 @@
 <?php
 
-require_once 'MarmitonCrawler.php';
-require_once 'SevenHundredAndFiftyGramsCrawler.php';
-require_once 'CuisineAZCrawler.php';
+require_once __DIR__.'/Crawlers/MarmitonCrawler.php';
+require_once __DIR__.'/Crawlers/SevenHundredAndFiftyGramsCrawler.php';
+require_once __DIR__.'/Crawlers/CuisineAZCrawler.php';
 
-class RecipeCrawlingEngine{
+class Bittersweet{
 	private $crawlers;
 
 	public function __construct(){

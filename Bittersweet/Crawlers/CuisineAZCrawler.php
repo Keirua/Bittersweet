@@ -1,8 +1,11 @@
 <?php
 
-require_once 'Recipe.php';
-require_once 'AbstractRecipeCrawler.php';
+require_once __DIR__.'/../Recipe.php';
+require_once __DIR__.'/AbstractRecipeCrawler.php';
 
+/*
+	Recipe crawler for the recipes on the website "CuisineAZ"
+*/
 class CuisineAZCrawler extends AbstractRecipeCrawler{
 	function crawl($url){
 		$recipe = new Recipe();

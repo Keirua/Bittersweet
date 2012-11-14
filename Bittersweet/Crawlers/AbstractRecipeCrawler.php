@@ -1,11 +1,13 @@
 <?php
 
-require_once 'goutte.phar';
+require_once __DIR__.'/goutte.phar';
 
 use Goutte\Client;
 
+/*
+	Abstract recipe crawler
+*/
 abstract class AbstractRecipeCrawler{
-	// Crawling related
 	protected $sourceUrl;
 	protected $crawler;
 
@@ -15,14 +17,18 @@ abstract class AbstractRecipeCrawler{
 		$this->crawler = $client->request('GET', $this->sourceUrl);
 	}
 
+	// Extracts the data from the page
 	abstract function crawl($url);
 
+	// Join the content of a list of nodes.
+	// Each of the node's content is separated with \n.
 	protected function convertElementsIntoString($nodes){
 		return implode ("\n", $nodes->each(function ($node, $i) {
 								    return $node->nodeValue;
 								}));
 	}
 
+	// Safely returns the text value if found
 	protected function getTextValue($node)
 	{
 		try{

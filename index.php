@@ -1,8 +1,8 @@
 <?php
 
-include_once 'RecipeCrawlingEngine.php';
+include_once 'Bittersweet/Bittersweet.php';
 
-$recipeEngine = new RecipeCrawlingEngine();
+$recipeEngine = new Bittersweet();
 
 $recipesMarmiton = array (
 		'http://www.marmiton.org/recettes/recette_tartare-de-boeuf-aux-parfums-thai_228521.aspx',
@@ -22,7 +22,6 @@ $recipes750 = array(
 		'http://www.750g.com/fiche_de_cuisine.2.123.42563.htm',
 		'http://www.750g.com/fiche_de_cuisine.2.123.59265.htm',
 		'http://www.750g.com/fiche_de_cuisine.2.123.58877.htm',
-
 	);
 
 $recipesCuisineAZ = array(
@@ -42,8 +41,6 @@ $url = 'http://www.cuisineaz.com/recettes/poulet-au-citron-54773.aspx';
 $recette = $recipeEngine->getRecipe($url);
 print_r($recette);
 */
-
-
 
 foreach ($recipes750 as $r){
 	$recette = $recipeEngine->getRecipe($r);

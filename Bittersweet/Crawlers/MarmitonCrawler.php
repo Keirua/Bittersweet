@@ -1,12 +1,17 @@
 <?php
 
-require_once 'Recipe.php';
-require_once 'AbstractRecipeCrawler.php';
+require_once __DIR__.'/../Recipe.php';
+require_once __DIR__.'/AbstractRecipeCrawler.php';
 
+/*
+	Crawler implementation for the recipes on the website marmiton.org
+
+	Not broken, but not yet working correctly on all the pages :
+	it only crawls the pages containing the "txtRecette" class.
+ 	A lot of pages seem to lack this styling element though, and errors are not caught
+*/
 class MarmitonCrawler extends AbstractRecipeCrawler
 {
-	// Only crawl pages with txtRecette class.
-	// A lot of pages seem to lack this styling element though, and errors are not caught
 	public function crawl($url){
 		$recipe = new Recipe();
 		$this->getPage($url);

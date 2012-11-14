@@ -1,8 +1,12 @@
 <?php
 
-require_once 'Recipe.php';
-require_once 'AbstractRecipeCrawler.php';
+require_once __DIR__.'/../Recipe.php';
+require_once __DIR__.'/AbstractRecipeCrawler.php';
 
+
+/*
+	Recipe crawler for the recipes on the website 750g
+*/
 class SevenHundredAndFiftyGramsCrawler extends AbstractRecipeCrawler{
 	function crawl($url){
 		$recipe = new Recipe();
@@ -48,7 +52,6 @@ class SevenHundredAndFiftyGramsCrawler extends AbstractRecipeCrawler{
 	private function extractValue($array, $string){
 		foreach ($array as $value){
 			if (strstr($value, $string)){
-				//return $value;
 				return trim(substr(trim($value), strlen($string)));
 			}
 		}
