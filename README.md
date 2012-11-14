@@ -2,12 +2,14 @@
 
 Bittersweet is a recipe crawling engine. If you are interested in a recipe that you have found, but wanna get rid of the other useless information in the page, you can use this tool.
 
-It extracts the data on a few cooking websites, in order to extract a few relevant information :
+It extracts a few information based on the recipe's URL :
 
 - Recipe name 
 - Ingredients required (and the corresponding number of persons)
 - Instructions
 If they are available, it also tries to extract the preparation and cooking time
+
+Since every website display the information differently, not all websites are supported.
 
 # Usage
 
@@ -22,13 +24,14 @@ Various getters and setters in the Recipe class will help you use the data after
 
 # Supported websites
 
-The supported websites are the following (french websites, sorry) :
+The supported websites are the following (french websites, sorry !) :
 - Marmiton.org
 - CuisineAZ.com
 - 750g.com
 
-Of course, since this tool analyzes the data contained in the source code, if the aforementionned websites come to change their page structure.
-At the moment, Marmiton's crawler is not yet fully supported, yet the other 2 should behave as expected
+Of course, since this tool analyzes the data contained in the source code, if the aforementionned websites come to change their page structure, further developments will have to be made in order to support the new page structure.
+
+At the moment, Marmiton's crawler is not yet fully supported, yet the other 2 should behave as expected.
 
 # Extending the framework
 
@@ -40,8 +43,6 @@ Extending the framework in order to add support for other websites is very easy 
 - Register the new crawling engine in Bittersweet's constructor
 
 Done !
-
-When trying to crawl the pages, it's useful
 
 # External librairies
 
