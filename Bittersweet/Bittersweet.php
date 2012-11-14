@@ -3,6 +3,7 @@
 require_once __DIR__.'/Crawlers/MarmitonCrawler.php';
 require_once __DIR__.'/Crawlers/SevenHundredAndFiftyGramsCrawler.php';
 require_once __DIR__.'/Crawlers/CuisineAZCrawler.php';
+require_once __DIR__.'/Crawlers/JournalDesFemmesCrawler.php';
 
 class Bittersweet{
 	private $crawlers;
@@ -11,7 +12,8 @@ class Bittersweet{
 		$this->crawlers = array (
 				'marmiton.org' 	=> new MarmitonCrawler(),
 				'750g.com' 		=> new SevenHundredAndFiftyGramsCrawler(),
-				'cuisineaz.com' => new CuisineAZCrawler()
+				'cuisineaz.com' => new CuisineAZCrawler(),
+				'cuisine.journaldesfemmes.com' => new JournalDesFemmesCrawler(),
 			);
 	}
 

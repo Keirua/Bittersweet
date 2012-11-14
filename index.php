@@ -34,13 +34,15 @@ $recipesCuisineAZ = array(
 		'http://www.cuisineaz.com/recettes/soupe-cremeuse-aux-champignons-53790.aspx'
 	);
 
-/*
+
 $url = 'http://www.marmiton.org/recettes/recette_gateau-a-la-polonaise-de-gabriella_37890.aspx';
 $url = 'http://www.cuisineaz.com/recettes/poulet-au-citron-54773.aspx';
+$url = 'http://cuisine.journaldesfemmes.com/recette/307392-steak-hache-a-la-japonaise';
+
 $recette = $recipeEngine->getRecipe($url);
 print_r($recette);
-*/
 
+/*
 foreach ($recipes750 as $r){
 	$recette = $recipeEngine->getRecipe($r);
 

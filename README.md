@@ -25,9 +25,10 @@ Various getters and setters in the Recipe class will help you use the data after
 # Supported websites
 
 The supported websites are the following (french websites, sorry !) :
-- Marmiton.org
 - CuisineAZ.com
 - 750g.com
+- Cuisine.JournalDesFemmes
+- Marmiton.org
 
 Of course, since this tool analyzes the data contained in the source code, if the aforementionned websites come to change their page structure, further developments will have to be made in order to support the new page structure.
 

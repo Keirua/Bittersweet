@@ -24,7 +24,7 @@ abstract class AbstractRecipeCrawler{
 	// Each of the node's content is separated with \n.
 	protected function convertElementsIntoString($nodes){
 		return implode ("\n", $nodes->each(function ($node, $i) {
-								    return $node->nodeValue;
+								    return trim($node->nodeValue);
 								}));
 	}
 
