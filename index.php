@@ -32,7 +32,6 @@ $recipesCuisineAZ = array(
 		'http://www.cuisineaz.com/recettes/salade-sucree-salee-mangue-crabe-52972.aspx',
 		'http://www.cuisineaz.com/recettes/salade-de-pommes-de-terre-alsacienne-37485.aspx',
 		'http://www.cuisineaz.com/recettes/soupe-cremeuse-aux-champignons-53790.aspx'
-
 	);
 
 /*
@@ -49,15 +48,12 @@ foreach ($recipes750 as $r){
 }
 
 
-
-
 /*
 $recetteThai = $recipeEngine->getRecipe('http://www.750g.com/fiche_de_cuisine_complete.htm?recettes_id=66095');
 
 print_r($recetteThai);
 
 /*
-
 $recetteThai = new MarmitonCrawler('http://www.marmiton.org/recettes/recette_tartare-de-boeuf-aux-parfums-thai_228521.aspx');
 print_r($recetteThai->getRecipe());
 
