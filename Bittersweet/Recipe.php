@@ -1,5 +1,7 @@
 <?php
 
+namespace Bittersweet;
+
 /*
 	Recipe data structure, which holds all the necessary information 
 */
@@ -13,11 +15,20 @@ class Recipe
 	protected $preparationTime;
 	protected $cookingTime;
 
+	public function __construct(){
+		$this->setTitle('');
+		$this->setIngredients('');
+		$this->setInstructions('');
+		$this->setNbPersons('');
+		$this->setPreparationTime('');
+		$this->setCookingTime('');
+	}
+
 	///////////////////////////////////////
 	/// Getters
 	///////////////////////////////////////
 	public function getTitle(){
-		return $this->title();
+		return $this->title;
 	}
 
 	public function getIngredients(){
