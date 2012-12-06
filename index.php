@@ -38,8 +38,10 @@ $recipesCuisineAZ = array(
 $url = 'http://www.marmiton.org/recettes/recette_gateau-a-la-polonaise-de-gabriella_37890.aspx';
 $url = 'http://www.cuisineaz.com/recettes/poulet-au-citron-54773.aspx';
 $url = 'http://cuisine.journaldesfemmes.com/recette/307392-steak-hache-a-la-japonaise';
+$url = 'http://www.cuisineaz.com/recettes/truffes-au-chocolat-5675.aspx';
 
 $recette = $recipeEngine->getRecipe($url);
+
 print_r($recette);
 
 /*

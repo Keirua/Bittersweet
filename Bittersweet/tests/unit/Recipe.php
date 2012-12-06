@@ -1,24 +1,4 @@
 <?php
-/*
-namespace tests\units;
-
-require_once '../mageekguy.atoum.phar';
-
-use mageekguy\atoum;
-
-class helloWorld extends atoum\test
-{
-    public function test__construct()
-    {
-        $helloWorld = new project\helloWorld();
-
-        $this
-            ->string($helloWorld->say())->isEqualTo('Hello!')
-            ->string($helloWorld->say($name = 'Frédéric Hardy'))->isEqualTo('Hello ' . $name . '!')
-        ;
-    }
-}*/
-
 
 namespace Bittersweet\tests\unit;
 

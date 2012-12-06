@@ -8,7 +8,8 @@ require_once __DIR__.'/AbstractRecipeCrawler.php';
 */
 class CuisineAZCrawler extends AbstractRecipeCrawler{
 	function crawl($url){
-		$recipe = new Recipe();
+		$recipe = new Bittersweet\Recipe();
+		
 		$this->getPage($url);
 
 		$recette = $this->crawler
