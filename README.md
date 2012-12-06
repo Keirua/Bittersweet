@@ -32,7 +32,7 @@ The supported websites are the following (french websites, sorry !) :
 
 Of course, since this tool analyzes the data contained in the source code, if the aforementionned websites come to change their page structure, further developments will have to be made in order to support the new page structure.
 
-At the moment, Marmiton's crawler is not yet fully supported, yet the other 2 should behave as expected.
+At the moment, Marmiton's crawler is not yet fully supported (the page structure is not the same on every recipe), yet the other 3 should behave as expected, as can testify the functionnal tests.
 
 # Extending the framework
 
@@ -41,13 +41,16 @@ Extending the framework in order to add support for other websites is very easy 
 - Create a new Crawler class in the Bittersweet/Crawlers directory
 - Make it inherit from AbstractRecipeCrawler
 - Implement the crawl($url) method. Look at how it's done in other crawling
-- Register the new crawling engine in Bittersweet's constructor
+- Register the new crawling engine in Bittersweet's constructor (yes, it does not match the open/closed principle, but it's simple enough for todays' needs).
 
 Done !
 
+# Tests
+Tests are far from perfect at the moment. Some basic unit tests have been writen using Atoum, and some functionnal tests are there too. The functionnal tests are meant to be executed "by hand" and then checked if the result is the one expected. They should be rewriten as real unit tests soon.
+
 # External librairies
 
-This tool is based on Goutte, a PHP crawling engine.
+This tool is based on Goutte, a PHP crawling engine. 
 
 # License
 
