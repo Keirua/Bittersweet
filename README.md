@@ -1,6 +1,6 @@
 # Bittersweet
 
-Bittersweet is a recipe crawling engine. If you are interested in a recipe that you have found, but wanna get rid of the other useless information in the page, you can use this tool.
+Bittersweet is a recipe crawling engine : it extracts recipe information from a few famous french recipe websites. If you are interested in a recipe that you have found, but wanna get rid of the other useless information in the page, you can use this tool.
 
 It extracts a few information based on the recipe's URL :
 
