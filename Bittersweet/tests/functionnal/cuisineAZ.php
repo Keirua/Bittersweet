@@ -19,3 +19,53 @@ foreach ($recipesCuisineAZ as $r){
 
 	print_r($recette);
 }
+
+
+<?php
+
+require_once __DIR__.'/../BitterSweetTestCase.php';
+require_once __DIR__.'/../../Recipe.php';
+
+class RecipeTest extends BitterSweet_TestCase{
+    public function testGetTitle()
+    {
+        $plop = new \Bittersweet\Recipe();
+        $plop->setTitle('plop');
+        $this->assertEquals($plop->getTitle(), ('plop'));
+    }
+
+    public function testGetIngredients()
+    {
+        $plop = new \Bittersweet\Recipe();
+        $plop->setIngredients('plop');
+        $this->assertEquals($plop->getIngredients(), ('plop'));
+    }
+
+    public function testGetInstructions()
+    {
+        $plop = new \Bittersweet\Recipe();
+        $plop->setInstructions('plop');
+        $this->assertEquals($plop->getInstructions(), ('plop'));
+    }
+
+    public function testNbPersons()
+    {
+        $plop = new \Bittersweet\Recipe();
+        $plop->setNbPersons('4 personnes');
+        $this->assertEquals($plop->getNbPersons(), ('4 personnes'));
+    }
+
+    public function testPreparationTime()
+    {
+        $plop = new \Bittersweet\Recipe();
+        $plop->setPreparationTime('plop');
+        $this->assertEquals($plop->getPreparationTime(), ('plop'));
+    }
+
+    public function testCookingTime()
+    {
+        $plop = new \Bittersweet\Recipe();
+        $plop->setCookingTime('plop');
+        $this->assertEquals($plop->getCookingTime(), ('plop'));
+    }
+}
