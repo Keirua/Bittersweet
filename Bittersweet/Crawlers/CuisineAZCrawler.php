@@ -22,7 +22,7 @@ class CuisineAZCrawler extends AbstractRecipeCrawler{
 
 		// Get the ingredients
 		$ingr_list = $recetteRight->filter('#ingredients .ingredient');
-		$recipe->setIngredients($this->convertElementsIntoString($ingr_list));
+		$recipe->setIngredients(explode("\n", $this->convertElementsIntoString($ingr_list)));
 
 		// Retrieve the instructions
 		$instruction_list =  $recette->filter('#preparation .instructions p'); 
