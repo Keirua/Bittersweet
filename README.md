@@ -46,7 +46,10 @@ Extending the framework in order to add support for other websites is very easy 
 Done !
 
 # Tests
-Tests are far from perfect at the moment. Some basic unit tests have been writen using Atoum, and some functionnal tests are there too. The functionnal tests are meant to be executed "by hand" and then checked if the result is the one expected. They should be rewriten as real unit tests soon.
+Tests are far from perfect at the moment. Some basic unit tests have been writen using PHPUnit, and some functionnal tests are there too. The functionnal tests are meant to be executed "by hand" and then checked if the result is the one expected. They should be rewriten as real unit tests soon.
+
+Tests are separated into unit and functionnal tests
+All tests should inherit from BitterSweet_TestCase. In order to write shorter tests, you can use the getRecipeFromUrl method.
 
 # External librairies
 
