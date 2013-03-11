@@ -5,8 +5,9 @@ Bittersweet is a recipe crawling engine : it extracts recipe information from a 
 It extracts a few information based on the recipe's URL :
 
 - Recipe name 
-- Ingredients required (and the corresponding number of persons)
+- Ingredients required (and the corresponding number of persons). It is returned as an array of ingredients.
 - Instructions
+
 If they are available, it also tries to extract the preparation and cooking time
 
 Since every website display the information differently, not all websites are supported.
@@ -48,7 +49,7 @@ Done !
 # Tests
 Tests are far from perfect at the moment. Some basic unit tests have been writen using PHPUnit, and some functionnal tests are there too. The functionnal tests are meant to be executed "by hand" and then checked if the result is the one expected. They should be rewriten as real unit tests soon.
 
-Tests are separated into unit and functionnal tests
+Tests are separated into unit and functionnal tests.
 All tests should inherit from BitterSweet_TestCase. In order to write shorter tests, you can use the getRecipeFromUrl method.
 
 # External librairies
