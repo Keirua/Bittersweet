@@ -33,6 +33,6 @@ class CuisineAZCrawler extends AbstractRecipeCrawler{
 		$recipe->setPreparationTime($this->getTextValue($recetteRight->filter('.preptime')));
 		$recipe->setCookingTime($this->getTextValue($recetteRight->filter('.cooktime')));
 
-		return $recipe;
+		return $recipe->cleanup();
 	}
 }

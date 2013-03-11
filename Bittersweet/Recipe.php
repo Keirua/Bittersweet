@@ -24,6 +24,12 @@ class Recipe
 		$this->setCookingTime('');
 	}
 
+	public function cleanup (){
+		$this->instructions = rtrim($this->instructions);
+
+		return $this;
+	}
+
 	///////////////////////////////////////
 	/// Getters
 	///////////////////////////////////////

@@ -13,7 +13,7 @@ require_once __DIR__.'/AbstractRecipeCrawler.php';
 class MarmitonCrawler extends AbstractRecipeCrawler
 {
 	public function crawl($url){
-		$recipe = new Recipe();
+		$recipe = new Bittersweet\Recipe();
 		$this->getPage($url);
 
 		$recette = $this->crawler
