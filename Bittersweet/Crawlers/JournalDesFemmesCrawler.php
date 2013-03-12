@@ -18,7 +18,7 @@ class JournalDesFemmesCrawler extends AbstractRecipeCrawler{
 
 		// Get the ingredients
 		$ingredient_list = $ingredientsSection->filter('.liste-ingredients .ingredient');
-		$recipe->setIngredients($this->convertElementsIntoString($ingredient_list));
+		$recipe->setIngredients(explode ("\n", $this->convertElementsIntoString($ingredient_list)));
 
 		// Retrieve the instructions
 		$instruction_list =  $recette
@@ -29,7 +29,7 @@ class JournalDesFemmesCrawler extends AbstractRecipeCrawler{
 		$recipe->setInstructions($mainInstructions."\n".$recommandations);
 
 		// Grabs preparation details
-		$recipe->setNbPersons($this->getTextValue($ingredientsSection->filter('.yield .yield')));
+		$recipe->setNbPersons(rtrim($this->getTextValue($ingredientsSection->filter('.yield .yield'))));
 		$listeTemps = $recette->filter('ul.liste_temps');
 		$recipe->setPreparationTime($this->getTextValue($listeTemps->filter('.prepTime')));
 		$recipe->setCookingTime($this->getTextValue($listeTemps->filter('.cookTime')));
