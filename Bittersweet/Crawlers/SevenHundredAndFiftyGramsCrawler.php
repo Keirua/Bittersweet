@@ -23,9 +23,9 @@ class SevenHundredAndFiftyGramsCrawler extends AbstractRecipeCrawler{
 		$recipe->setTitle($this->getTextValue($recette->filter('.page_recette_titre .fn')));
 
 		// Get ingredients
-		$recipe->setIngredients( implode ("\n", $ingredients_list->each(function ($node, $i) {
+		$recipe->setIngredients( $ingredients_list->each(function ($node, $i) {
 								    return $node->nodeValue;
-								})));
+								}));
 
 		// Get instructions
 		$recipe->setInstructions( implode ("\n", $recette->filter('.content .steps span')
