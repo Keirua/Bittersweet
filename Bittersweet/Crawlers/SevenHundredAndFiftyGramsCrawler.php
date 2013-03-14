@@ -55,6 +55,5 @@ class SevenHundredAndFiftyGramsCrawler extends AbstractRecipeCrawler{
 				return trim(substr(trim($value), strlen($string)));
 			}
 		}
-
 	}
 }
